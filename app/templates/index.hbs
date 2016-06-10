@@ -1,1 +1,5 @@
 <h1>Message Board</h1>
+
+{{#each model.questions as |question|}}
+  {{question-tile question=question}}
+{{/each}}
