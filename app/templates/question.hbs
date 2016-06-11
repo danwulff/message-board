@@ -1,1 +1,12 @@
 {{question-tile question=model}}
+<hr>
+<h4>Answers:</h4>
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.author}} says: {{answer.text}}</li>
+  {{/each}}
+</ul>
+
+<br>
+<h4>Leave an answer:</h4>
+{{new-answer save="save" question=model}}
