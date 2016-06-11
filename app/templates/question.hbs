@@ -1,11 +1,15 @@
-{{question-tile question=model}}
+{{question-details question=model}}
 <hr>
+
+{{#if model.answers}}
 <h4>Answers:</h4>
 <ul>
   {{#each model.answers as |answer|}}
     <li>{{answer.author}} says: {{answer.text}}</li>
   {{/each}}
 </ul>
+{{/if}}
+
 
 <br>
 <h4>Leave an answer:</h4>

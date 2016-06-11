@@ -1,0 +1,19 @@
+
+<form>
+  <div class="form-group">
+    <label for="question">Question</label><br>
+    {{input value=question id="question"}}
+  </div>
+
+  <div class="form-group">
+    <label for="author">Author</label><br>
+    {{input value=author id="author"}}
+  </div>
+
+  <div class="form-group">
+    <label for="text">Additional text</label><br>
+    {{input value=text id="text"}}
+  </div>
+
+  <button {{action 'save'}}>Save</button>
+</form>
