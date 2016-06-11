@@ -5,4 +5,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   text: DS.attr(),
   date: DS.attr(),
+  answers: DS.hasMany('answer', {async: true})
 });
